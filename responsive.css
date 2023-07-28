@@ -1,0 +1,40 @@
+@media (max-width : 992px) {
+   
+    nav {
+        display: none;
+      }
+   .bar-icon{
+        display: block;
+      }
+      .hero .container .content p{  
+        opacity: 1;
+      }
+      main .hero  .container{
+        min-height: 40vh;
+        margin-top: 200px;
+      }
+      .content .primary-btn{
+        margin-bottom: 80px;
+      }
+     .myimg img{
+        width: 40vw;
+        height: 500px;
+        margin-right: 70px;
+      }
+      .contactTtwo{
+       width: 300px;
+        right: 20px;
+        bottom: 30px;
+      }
+.footer{
+margin-top: 100px;
+width: 100%;
+
+}
+
+  }
+  @media (max-width:768px) {
+    .contactTtwo{
+      display: none;
+     }
+  }

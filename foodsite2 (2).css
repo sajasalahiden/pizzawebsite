@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  outline: none;
+}
+
+:root {
+  --organColor: #F8A22F;
+  --darkColor: #242424;
+  --whiteColor: #fff;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Baloo 2', cursive;
+
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+a.primary-btn {
+  background-color: var(--organColor);
+  color: var(--whiteColor);
+  border-radius: 25px;
+  padding:10px 20px;
+  opacity: 1;
+  font-size: 1.2rem;
+
+}
+.container {
+  width: 85%;
+  margin-inline: auto;
+}
+
+
+main {
+  min-height: 100vh;
+  background-image: url("Mask-Group1\ \(1\).png");
+  background-repeat: no-repeat;
+  background-position: right -2px;
+  background-size: contain ;
+}
+
+
+main span {
+  color: var(--organColor);
+}
+
+main header .container {
+  padding: 5px 0;
+  min-height: 12vh;
+  display: grid;
+
+  grid-template-columns: 200px auto;
+  place-content: center space-between;
+  align-items: center;
+}
+
+main header .container .logo {
+  color: var(--darkColor);
+  font-size: 2rem;
+}
+ .bar-icon {
+  font-size: 3rem;
+  display: none;
+}
+
+header .bar-icon:hover+nav {
+  display: grid;
+  position: fixed;
+  left: 0;
+  top: 15vh;
+  background-color: #333;
+  width: 100%;
+  padding: 20px;
+  text-align: center;}
+main header .container nav {
+  color: var(--whiteColor);
+  
+  gap: 40px;
+  font-size: 1.2rem;
+}
+
+main header .container nav a {
+  padding: 10px;
+  opacity: 0.7;
+}
+main header .container nav a.active {
+  border-bottom: 3px solid var(--organColor);
+  opacity: 1;
+}
+main header .container nav a.primary-btn {
+  background-color: var(--organColor);
+  border-radius: 25px;
+  padding-inline: 20px;
+  opacity: 1;
+}
+
+
+main .hero  .container{
+  min-height: 88vh;
+  display: grid;
+  align-content: center;
+  position: relative;
+  
+}
+main .hero  .container .content{
+  width: 500px;
+  color: var(--darkColor);
+
+}
+
+main .hero  .container .content h1{
+  font-size: 3.5rem;
+  line-height: 1.4;
+}
+main .hero  .container .content p{
+  margin: 10px 0 40px;
+  font-size: 1.4rem;
+  opacity: 0.7;
+}
+main .hero  .container .content .primary-btn{
+  transition: 0.5s;
+}
+main .hero  .container .content .primary-btn:hover{
+  background-color: var(--darkColor);
+
+}
+main .hero  .container .socail-links{
+  position: absolute;
+  bottom: 40px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 1.6rem;
+  transition: 0.5s;
+}
+main .hero  .container .socail-links a{
+transition: 0.5s;
+opacity: 0.3;
+
+}
+main .hero  .container .socail-links a:hover{
+
+  transform: scale(1.3) translateY(-5px);
+  color: var(--organColor);
+  opacity: 1;
+}
+/*     */
+.dashed{
+  height: 2px;
+  width: 99vw;
+  border-top: 2px dashed rgb(15, 15, 32);
+}
+
+.ourfood{
+  display: flex;
+  margin: 30px 0;
+  overflow-x: hidden !important;
+  box-sizing:border-box;
+}
+
+.ourfood .myimg img{
+  width: 50vw;
+}
+.myuorfood{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+}
+.myuorfood h1{
+  margin-bottom: 40px;
+  position: relative;
+}
+.myuorfood h1:after{
+  content: '';
+  width: 100%;
+  height: 3px;
+  background-color: var(--organColor);
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.uors{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
+  position: relative;
+  margin-top: 17px;
+}
+.uors::before{
+  content: '+';
+  text-align: center;
+  padding:3.5px 10px;
+  background-color: var(--organColor);
+  color: white;
+  border-radius: 50%;
+  font-size: xx-large;
+  position: absolute;
+  left: -60px;
+
+}
+
+.uors h3{
+  margin-bottom: 7px;
+}
+.uors p{
+opacity: 50%;
+
+}
+ .primary-btn{
+  transition: 0.5s;
+}
+ .primary-btn:hover{
+  background-color: var(--darkColor);
+
+}
+
+
+/*               */
+.plans{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(Mask-Grou-7\ \(1\).png);
+  background-color:var(--organColor);
+  background-repeat: no-repeat;
+  background-size:99vw;
+  height: 100vh;
+}
+.plansimgs{
+  margin-top: 60px;
+display: flex;
+justify-content: space-around;
+gap: 20px;
+
+}
+.plansimgs img{
+  width: 38vw;
+}
+.planscontent h1{
+  margin-top: 30px;
+  position: relative;}
+  .planscontent h1:after{
+
+    content: '';
+    height: 3px;
+    width: 100%;
+    background-color: aliceblue;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+/*           */
+.contact img{
+  width: 100vw;
+  z-index: -2;
+}
+.contact{
+  position: relative;
+}
+.contact h1{
+  position: absolute;
+  left: 50px;
+  top: 60px;
+}
+.cartone{
+  position: absolute;
+  left: 50px;
+  top: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+  border-radius: 11px;
+  width: 300px;
+  height: 350px;
+  background-color: var(--organColor);
+
+}
+.cartone input:not([type="checkbox"]):not([type="submit"]) {
+  margin-bottom: 20px;
+  height: 30px;
+  padding-left: 7px;
+}
+.cartone #submit {
+  width: 80px;
+  height: 40px;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: none;
+}
+#massage{
+  height: 70px;
+}
+.contactTtwo{
+  width: 400px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 18px;
+  display: flex;
+  position: absolute;
+  right: 161px;
+  bottom: 356px;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.contactTtwo::after{
+  content: '';
+  border-style: solid;
+  border-width: 26px;
+  border-color: #fff transparent transparent transparent;
+  height: 0;
+  width: 0;
+  position: absolute;
+  left: 34px;
+  bottom: -50px;
+}
+
+.contactTtwo img{
+  margin: 20px;
+  width: 80%;
+  border-radius: 18px;
+
+}
+.contactTtwo h3{
+  margin-bottom: 6px;
+}
+
+.contactTtwo p{
+
+  color: rgb(37, 36, 36);
+}
+.footer{
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+  margin-top: 20px;
+  background-color: #F8A22F;
+  
+}
+.footer ul li{
+  list-style: none;
+  margin: 30px 0;
+}
+.footer a{
+  text-decoration: none;
+  color: black;
+}
